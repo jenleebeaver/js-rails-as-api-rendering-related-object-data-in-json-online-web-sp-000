@@ -11,4 +11,7 @@ class SightingsController < ApplicationController
     end
   end
 
+  def index
+  end
+
 end
