@@ -12,6 +12,8 @@ class SightingsController < ApplicationController
   end
 
   def index
+    sightings = Sightings.all
+    render json: sightings, include: [:bird, :location]
   end
 
 end
